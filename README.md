@@ -59,7 +59,7 @@ cd Arch-AutoBspwm
 sh install.sh
 ```
 
-After the script finishes, run the postinstall script
+After the script finishes, run the postinstall script to install blackarch if wanted, configure .zshrc and cleanup
 
 ```
 sh postinstall.sh
