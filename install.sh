@@ -23,11 +23,6 @@ sudo chmod +x ~/.config/sxhkd/sxhkdrc
 sudo chmod +x ~/.config/bspwm/bspwmrc
 sudo chmod +x ~/.config/bspwm/scripts/bspwm_resize
 
-# Installing blackarch :)
-echo -ne "\n[+] Installing blackarch repo :)\n"
-curl -O https://blackarch.org/strap.sh
-sudo sh strap.sh
-
 # setting up Oh My Zsh
 echo -ne "\n[+] Setting up Oh My Zsh\n"
 cd $HOME
