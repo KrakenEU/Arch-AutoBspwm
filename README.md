@@ -6,6 +6,8 @@ I'm no magician, nor creator of anything you see, I'm just offering my autoconfi
 
 ## Arch Installation
 
+Download your iso file: https://archlinux.org/download/
+
 1. archinstall
 	- disk partitioning 
 		- manual -> suggest layout -> enter -> disable copy on write -> separate partition 		for /home
