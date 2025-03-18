@@ -21,6 +21,7 @@ fc-cache -fv
 
 sudo chmod +x ~/.config/sxhkd/sxhkdrc
 sudo chmod +x ~/.config/bspwm/bspwmrc
+sudo chmod +x ~/.config/polybar/launch.sh
 sudo chmod +x ~/.config/bspwm/scripts/bspwm_resize
 
 # setting up Oh My Zsh
