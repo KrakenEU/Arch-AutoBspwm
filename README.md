@@ -10,7 +10,11 @@ Download your iso file: https://archlinux.org/download/
 
 1. archinstall
 	- disk partitioning 
-		- manual -> suggest layout -> enter -> disable copy on write -> separate partition 		for /home
+		- Use best effort -> ext4 -> no sepparate /home partition
+ 	 - Audio
+		- pipewire
+   	- Network 
+		- NetworkManager
 	- the rest is up to you
 
 
