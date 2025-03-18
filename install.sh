@@ -5,11 +5,6 @@
 [ "$(id -u)" -eq 0 ] && echo "error: avoid running autoArch.sh as root/sudo." && exit
 
 
-# select mirrors
-echo -ne "\n[+] Selecting mirrors\n"
-sudo pacman -S --noconfirm reflector
-sudo reflector --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
-
 # install packages
 
 echo -ne "\n[+] Installing required packages\n"
