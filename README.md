@@ -20,14 +20,6 @@ Download your iso file: https://archlinux.org/download/
 
 2. Manual installations after archinstall step
 
-(edit /etc/hosts)
-
-```
-127.0.0.1     localhost
-::1           localhost
-127.0.1.1     <your_hostname>.localdomain <your_hostname>
-```
-
 Basic packages installation
 
 ```
@@ -37,18 +29,30 @@ pacman -S gdm kitty git nano
 
 systemctl enable NetworkManager.service
 systemctl enable gdm.service
-
-exit
-reboot
 ```
 
-## Vmware Guest Additions
+(edit /etc/hosts)
+
+```
+127.0.0.1     localhost
+::1           localhost
+127.0.1.1     <your_hostname>.localdomain <your_hostname>
+```
+
+Vmware Guest Additions
 
 ```
 sudo pacman -S open-vm-tools
 sudo systemctl enable vmtoolsd.service
 sudo systemctl enable vmware-vmblock-fuse.service
 sudo pacman -S gtkmm3
+```
+
+Reboot :)
+
+```
+exit
+reboot
 ```
 
 ## Bspwm Auto Installation
