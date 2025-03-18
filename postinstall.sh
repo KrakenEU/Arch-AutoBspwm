@@ -2,9 +2,10 @@
 
 echo -ne "\n[+] Fixing .zshrc\n"
 
-cp zshrc_template ~/.zshrc
+cp configurations/zshrc_template ~/.zshrc
 
 echo -ne "\n[+] Cleaning up...\n"
+cd $HOME
 sudo find / -type d -name "ArchBspwm" -exec rm -rf {} + 2>/dev/null
 sudo pacman -Rs $(pacman -Qqtd) --noconfirm 
 
