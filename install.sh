@@ -20,6 +20,10 @@ echo -ne "\n[+] Setting up directories\n"
 mkdir $HOME/.config
 cp -r configurations/* $HOME/.config/
 
+mkdir $HOME/.local/share/fonts
+cp -r fonts/* $HOME/.local/share/fonts
+fc-cache -fv
+
 sudo chmod +x ~/.config/sxhkd/sxhkdrc
 sudo chmod +x ~/.config/bspwm/bspwmrc
 sudo chmod +x ~/.config/bspwm/scripts/bspwm_resize
