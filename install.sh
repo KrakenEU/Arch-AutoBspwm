@@ -15,6 +15,8 @@ echo -ne "\n[+] Setting up directories\n"
 mkdir $HOME/.config
 cp -r configurations/* $HOME/.config/
 
+find $HOME/.config/polybar/ -type f -exec chmod +x {} \; 
+
 mkdir $HOME/.local/share/fonts
 cp -r fonts/* $HOME/.local/share/fonts
 fc-cache -fv
