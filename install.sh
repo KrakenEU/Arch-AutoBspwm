@@ -8,7 +8,7 @@
 # install packages
 
 echo -ne "\n[+] Installing required packages\n"
-sudo pacman -S --noconfirm git kitty bspwm wmname firefox sxhkd polybar zsh feh picom ranger rofi dunst nano openssh openssl thunar unzip zsh fd npm noto-fonts-emoji zsh-syntax-highlighting zsh-autosuggestions wget
+sudo pacman -S --noconfirm git lsd kitty bspwm wmname firefox sxhkd polybar zsh feh picom ranger rofi dunst nano openssh openssl thunar unzip zsh fd npm noto-fonts-emoji zsh-syntax-highlighting zsh-autosuggestions wget
 
 # create directories
 echo -ne "\n[+] Setting up directories\n"
