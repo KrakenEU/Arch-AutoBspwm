@@ -25,10 +25,10 @@ Basic packages installation
 ```
 pacman -S xorg xorg-server
 
-pacman -S gdm kitty git nano
+pacman -S kitty git nano lightdm lightdm-gtk-greeter
 
 systemctl enable NetworkManager.service
-systemctl enable gdm.service
+sudo systemctl enable lightdm
 ```
 
 (edit /etc/hosts)
