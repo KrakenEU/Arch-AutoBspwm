@@ -76,7 +76,7 @@ sudo pacman -S lightdm-webkit2-greeter
 ```
 
 edit /etc/lightdm/lightdm.conf (search [Seat:*])
- -> greeter-session=lightdm-slick-greeter
+ -> greeter-session=lightdm-webkit2-greeter
 
 Change background in:
 ```
