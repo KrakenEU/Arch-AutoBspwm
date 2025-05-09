@@ -72,15 +72,11 @@ sh postinstall.sh
 ## (extra) Change lightdm greeter
 
 ```
-sudo pacman -S lightdm-webkit2-greeter
+sudo pacman -S lightdm-slick-greeter
 ```
 
 edit /etc/lightdm/lightdm.conf (search [Seat:*])
- -> greeter-session=lightdm-webkit2-greeter
+ -> greeter-session=lightdm-slick-greeter
 
-Change background in:
-```
-sudo nano /etc/lightdm/lightdm-webkit2-greeter.conf
-```
 
 
