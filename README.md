@@ -68,3 +68,19 @@ After the script finishes, run the postinstall script to install blackarch if wa
 ```
 sh postinstall.sh
 ```
+
+## (extra) Change lightdm greeter
+
+```
+sudo pacman -S lightdm-webkit2-greeter
+```
+
+edit /etc/lightdm/lightdm.conf (search [Seat:*])
+ -> greeter-session=lightdm-slick-greeter
+
+Change background in:
+```
+sudo nano /etc/lightdm/lightdm-webkit2-greeter.conf
+```
+
+
