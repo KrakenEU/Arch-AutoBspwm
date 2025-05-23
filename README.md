@@ -28,7 +28,6 @@ pacman -S xorg xorg-server
 pacman -S kitty git nano lightdm lightdm-gtk-greeter
 
 systemctl enable NetworkManager.service
-sudo systemctl enable lightdm
 ```
 
 (edit /etc/hosts)
@@ -67,6 +66,7 @@ After the script finishes, run the postinstall script to install blackarch if wa
 
 ```
 sh postinstall.sh
+sudo systemctl enable lightdm
 ```
 
 ## (extra) Change lightdm greeter
