@@ -67,6 +67,7 @@ After the script finishes, run the postinstall script to install blackarch if wa
 ```
 sh postinstall.sh
 sudo systemctl enable lightdm
+reboot
 ```
 
 ## (extra) Change lightdm greeter
