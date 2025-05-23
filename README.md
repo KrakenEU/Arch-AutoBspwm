@@ -25,7 +25,7 @@ Basic packages installation
 ```
 pacman -S xorg xorg-server
 
-pacman -S kitty git nano gdm
+pacman -S kitty git nano gnome
 
 systemctl enable NetworkManager.service
 sudo systemctl enable gdm.service
