@@ -25,9 +25,10 @@ Basic packages installation
 ```
 pacman -S xorg xorg-server
 
-pacman -S kitty git nano lightdm lightdm-gtk-greeter
+pacman -S kitty git nano gdm
 
 systemctl enable NetworkManager.service
+sudo systemctl enable gdm.service
 ```
 
 (edit /etc/hosts)
@@ -66,13 +67,15 @@ After the script finishes, run the postinstall script to install blackarch if wa
 
 ```
 sh postinstall.sh
+```
+
+## (extra) Change to lightdm greeter
+
+```
+sudo pacman -S lightdm lightdm-gtk-greeter
+sudo systemctl disable gdm
 sudo systemctl enable lightdm
-reboot
-```
 
-## (extra) Change lightdm greeter
-
-```
 sudo pacman -S lightdm-slick-greeter
 ```
 
