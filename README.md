@@ -10,7 +10,7 @@ Download your iso file: https://archlinux.org/download/
 
 1. archinstall
 	- disk partitioning 
-		- Use best effort -> ext4 -> no sepparate /home partition
+		- Use best effort -> Btrfs -> continue
  	 - Audio
 		- pipewire
    	- Network 
