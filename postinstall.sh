@@ -9,12 +9,11 @@ sudo ln -sf $HOME/.zshrc /root/.zshrc
 sudo chsh -s /usr/bin/zsh root 
 
 ## blackarch
-wget https://raw.githubusercontent.com/KrakenEU/Arch-AutoBspwm/refs/heads/main/strap.sh
-sudo sh strap.sh
+#wget https://raw.githubusercontent.com/KrakenEU/Arch-AutoBspwm/refs/heads/main/strap.sh
+#sudo sh strap.sh
 
 # clean
 echo -ne "\n[+] Cleaning up...\n"
 sudo pacman -Sy archlinux-keyring
-sudo pacman -S --overwrite '*' firefox gnu-free-fonts mailcap
 
 echo -ne "\n[+] DONE!\n"
