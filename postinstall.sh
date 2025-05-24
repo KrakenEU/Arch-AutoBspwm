@@ -10,6 +10,7 @@ sudo chsh -s /usr/bin/zsh root
 
 # clean orphans if needed
 echo -ne "\n[+] Cleaning up...\n"
-sudo pacman -Rs $(pacman -Qqtd) --noconfirm 
+sudo pacman -Sy archlinux-keyring
+sudo pacman-key --refresh-keys
 
 echo -ne "\n[+] DONE!\n"
