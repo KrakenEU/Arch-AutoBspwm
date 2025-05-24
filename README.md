@@ -69,11 +69,3 @@ After the script finishes, run the postinstall script to install blackarch if wa
 sh postinstall.sh
 ```
 
-
-## BlackArch (optional)
-
-```
-wget https://raw.githubusercontent.com/KrakenEU/Arch-AutoBspwm/refs/heads/main/strap.sh
-sudo sh strap.sh
-```
-
