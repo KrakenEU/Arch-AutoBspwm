@@ -8,7 +8,7 @@
 # install packages
 
 echo -ne "\n[+] Installing required packages\n"
-sudo pacman -S --noconfirm git lsd kitty bspwm wmname firefox sxhkd polybar zsh feh picom ranger rofi dunst nano openssh openssl thunar unzip zsh fd npm noto-fonts-emoji zsh-syntax-highlighting zsh-autosuggestions wget
+sudo pacman -S --noconfirm git lsd kitty bspwm wmname sxhkd polybar zsh feh picom rofi nano unzip zsh noto-fonts-emoji zsh-syntax-highlighting zsh-autosuggestions wget
 
 # create directories
 echo -ne "\n[+] Setting up directories\n"
@@ -25,6 +25,21 @@ sudo chmod +x ~/.config/sxhkd/sxhkdrc
 sudo chmod +x ~/.config/bspwm/bspwmrc
 sudo chmod +x ~/.config/polybar/launch.sh
 sudo chmod +x ~/.config/bspwm/scripts/bspwm_resize
+
+echo -ne "\n[+] Creating bspwm.desktop for LightDM\n"
+sudo mkdir -p /usr/share/xsessions
+
+cat <<EOF | sudo tee /usr/share/xsessions/bspwm.desktop > /dev/null
+[Desktop Entry]
+Name=bspwm
+Comment=Tiling window manager
+Exec=bspwm
+TryExec=bspwm
+Type=Application
+DesktopNames=bspwm
+EOF
+
+echo -ne "\n[✔] Minimal bspwm setup done. Select it from LightDM at login.\n"
 
 # setting up Oh My Zsh
 echo -ne "\n[+] Setting up Oh My Zsh\n"
