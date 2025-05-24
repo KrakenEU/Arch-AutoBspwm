@@ -39,8 +39,6 @@ Type=Application
 DesktopNames=bspwm
 EOF
 
-sudo pacman -S --overwrite '*' firefox gnu-free-fonts mailcap
-
 echo -ne "\n[✔] Minimal bspwm setup done. Select it from LightDM at login.\n"
 
 # setting up Oh My Zsh
