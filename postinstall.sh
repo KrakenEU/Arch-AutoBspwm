@@ -10,9 +10,8 @@ sudo chsh -s /usr/bin/zsh root
 
 # Installing blackarch :) (comment out to ommit)
 echo -ne "\n[+] Installing blackarch repo :)\n"
-curl -O https://blackarch.org/strap.sh
-chmod +x strap.sh
-sudo ./strap.sh
+curl -O https://blackarch.org/blackarch-keyring.pkg.tar.zst
+sudo pacman -U blackarch-keyring.pkg.tar.zst
 
 # clean orphans if needed
 echo -ne "\n[+] Cleaning up...\n"
