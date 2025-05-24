@@ -11,7 +11,8 @@ sudo chsh -s /usr/bin/zsh root
 # Installing blackarch :) (comment out to ommit)
 echo -ne "\n[+] Installing blackarch repo :)\n"
 curl -O https://blackarch.org/strap.sh
-sudo sh strap.sh
+chmod +x strap.sh
+sudo ./strap.sh
 
 # clean orphans if needed
 echo -ne "\n[+] Cleaning up...\n"
