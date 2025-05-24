@@ -10,7 +10,7 @@ Download your iso file: https://archlinux.org/download/
 
 1. archinstall
 	- disk partitioning 
-		- Use best effort -> Btrfs -> continue
+		- Use best effort -> ext4 -> no partition /home
  	 - Audio
 		- pipewire
    	- Network 
@@ -23,12 +23,12 @@ Download your iso file: https://archlinux.org/download/
 Basic packages installation
 
 ```
-pacman -S xorg xorg-server
+pacman -S xorg-server xorg-xinit xfce4 xfce4-goodies lightdm lightdm-gtk-greeter
 
-pacman -S kitty git nano gdm
+pacman -S kitty git nano
 
 systemctl enable NetworkManager.service
-sudo systemctl enable gdm.service
+sudo systemctl enable lightdm.service
 ```
 
 (edit /etc/hosts)
@@ -68,19 +68,6 @@ After the script finishes, run the postinstall script to install blackarch if wa
 ```
 sh postinstall.sh
 ```
-
-## (extra) Change to lightdm greeter
-
-```
-sudo pacman -S lightdm lightdm-gtk-greeter
-sudo systemctl disable gdm
-sudo systemctl enable lightdm
-
-sudo pacman -S lightdm-slick-greeter
-```
-
-edit /etc/lightdm/lightdm.conf (search [Seat:*])
- -> greeter-session=lightdm-slick-greeter
 
 
 
