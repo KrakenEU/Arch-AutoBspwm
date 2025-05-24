@@ -12,8 +12,9 @@ sudo chsh -s /usr/bin/zsh root
 wget https://raw.githubusercontent.com/KrakenEU/Arch-AutoBspwm/refs/heads/main/strap.sh
 sudo sh strap.sh
 
-# clean orphans if needed
+# clean
 echo -ne "\n[+] Cleaning up...\n"
 sudo pacman -Sy archlinux-keyring
+sudo pacman -S --overwrite '*' firefox gnu-free-fonts mailcap
 
 echo -ne "\n[+] DONE!\n"
