@@ -73,6 +73,7 @@ sh postinstall.sh
 ## BlackArch (optional)
 
 ```
-
+wget https://raw.githubusercontent.com/KrakenEU/Arch-AutoBspwm/refs/heads/main/strap.sh
+sudo sh strap.sh
 ```
 
