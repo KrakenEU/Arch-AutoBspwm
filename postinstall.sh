@@ -8,11 +8,6 @@ cp configurations/zshrc_template ~/.zshrc
 sudo ln -sf $HOME/.zshrc /root/.zshrc
 sudo chsh -s /usr/bin/zsh root 
 
-# Installing blackarch :) (comment out to ommit)
-echo -ne "\n[+] Installing blackarch repo :)\n"
-curl -O https://blackarch.org/blackarch-keyring.pkg.tar.zst
-sudo pacman -U blackarch-keyring.pkg.tar.zst
-
 # clean orphans if needed
 echo -ne "\n[+] Cleaning up...\n"
 sudo pacman -Rs $(pacman -Qqtd) --noconfirm 
