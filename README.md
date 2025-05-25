@@ -25,10 +25,18 @@ Basic packages installation
 ```
 pacman -S xorg xorg-server xorg-xinit xfce4 xfce4-goodies lightdm lightdm-gtk-greeter
 
-pacman -S kitty git nano
+pacman -S kitty git nano mesa
 
 systemctl enable NetworkManager.service
 sudo systemctl enable lightdm.service
+```
+
+IMPROTANT (create /etc/X11/xorg.conf.d/20-vmware.conf)
+```
+Section "Device"
+    Identifier "VMware Graphics"
+    Driver "modesetting"
+EndSection
 ```
 
 (edit /etc/hosts)
