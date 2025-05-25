@@ -6,6 +6,8 @@ I'm no magician, nor creator of anything you see, I'm just offering my autoconfi
 
 ## Arch Installation
 
+### THIS INSTALLATION IS INTENDED FOR VMWARE, MAKE SURE TO ENABLE 3D ACCEL
+
 Download your iso file: https://archlinux.org/download/
 
 1. archinstall
