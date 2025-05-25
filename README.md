@@ -25,7 +25,7 @@ Basic packages installation
 ```
 pacman -S xorg xorg-server xorg-xinit xfce4 xfce4-goodies lightdm lightdm-gtk-greeter
 
-pacman -S kitty git nano mesa
+pacman -S kitty git nano firefox mesa
 
 systemctl enable NetworkManager.service
 sudo systemctl enable lightdm.service
