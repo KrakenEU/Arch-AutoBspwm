@@ -31,7 +31,7 @@ systemctl enable NetworkManager.service
 sudo systemctl enable lightdm.service
 ```
 
-IMPROTANT (create /etc/X11/xorg.conf.d/20-vmware.conf)
+IMPROTANT ONLY FOR VMWARE (create /etc/X11/xorg.conf.d/20-vmware.conf)
 ```
 Section "Device"
     Identifier "VMware Graphics"
