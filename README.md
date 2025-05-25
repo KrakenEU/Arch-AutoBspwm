@@ -23,7 +23,7 @@ Download your iso file: https://archlinux.org/download/
 Basic packages installation
 
 ```
-pacman -S xorg-server xorg-xinit xfce4 xfce4-goodies lightdm lightdm-gtk-greeter
+pacman -S xorg xorg-server xorg-xinit xfce4 xfce4-goodies lightdm lightdm-gtk-greeter
 
 pacman -S kitty git nano
 
