@@ -33,18 +33,6 @@ systemctl enable NetworkManager.service
 sudo systemctl enable lightdm.service
 ```
 
-OPTIONAL ONLY FOR VMWARE IF USING UEFI (create /etc/X11/xorg.conf.d/20-vmware.conf)
-```
-Section "Device"
-    Identifier "VMware Graphics"
-    Driver "modesetting"
-EndSection
-```
-
-```
-pacman -S mesa
-```
-
 (edit /etc/hosts)
 
 ```
