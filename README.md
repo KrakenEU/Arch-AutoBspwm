@@ -27,7 +27,7 @@ Basic packages installation
 ```
 pacman -S xorg xorg-server xorg-xinit xfce4 xfce4-goodies lightdm lightdm-gtk-greeter
 
-pacman -S kitty git nano firefox mesa
+pacman -S kitty git nano firefox
 
 systemctl enable NetworkManager.service
 sudo systemctl enable lightdm.service
@@ -39,6 +39,10 @@ Section "Device"
     Identifier "VMware Graphics"
     Driver "modesetting"
 EndSection
+```
+
+```
+pacman -S mesa
 ```
 
 (edit /etc/hosts)
